@@ -48,7 +48,7 @@ export function App() {
   }
     
   const updateEverything = (index) => {
-    if (board[index] || winner) return // si la casilla está ocupada, no hacer nada (no permite sobreescribir)
+    if (board[index] || winner) return // si la casilla está ocupada o si hay ganador, no hacer nada (no permite sobreescribir)
     const newBoard = [...board] // hacemos una copia del tablero
     newBoard[index] = turn // actualizamos la casilla con el simbolo correspondiente a quien tiene el turno
     setBoard(newBoard) // actualizamos el tablero
