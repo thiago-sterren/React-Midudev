@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main img {
+    max-height: 500px;
+    width: auto;
+}
+
+main * {
+    padding: 20px;
+}
